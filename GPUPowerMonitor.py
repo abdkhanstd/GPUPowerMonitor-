@@ -50,8 +50,8 @@ gpu_monitor = GPUPowerMonitor()
 
 def simulate_gpu_computation():
     # Create random tensors and perform matrix multiplication on GPU
-    a = torch.randn(10000, 10000, device='cuda')
-    b = torch.randn(10000, 10000, device='cuda')
+    a = torch.randn(1000, 1000, device='cuda')
+    b = torch.randn(1000, 1000, device='cuda')
     c = torch.matmul(a, b)
 
     # Record GPU power consumption during computation
